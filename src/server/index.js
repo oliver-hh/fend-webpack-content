@@ -1,6 +1,6 @@
 const port = 3000;
 
-// const path = require('path');
+const path = require('path'); // eslint-disable-line no-unused-vars
 const express = require('express');
 const mockAPIResponse = require('./mockAPI.js');
 
