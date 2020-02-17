@@ -11,7 +11,7 @@
  * Check whether name exists
  * @param {*} inputText
  */
-function checkForName(inputText) { // eslint-disable-line no-unused-vars
+function checkForName(inputText) {
   console.log('::: Running checkForName :::', inputText);
   const names = [
     'Picard',
