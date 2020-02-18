@@ -16,4 +16,7 @@ module.exports = {
   },
   'rules': {
   },
+  "parserOptions": {
+    "sourceType": "module"
+  }
 };
