@@ -25,3 +25,5 @@ function checkForName(inputText) {
     alert('Welcome, Captain!');
   }
 }
+
+export {checkForName};

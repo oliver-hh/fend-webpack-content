@@ -2,7 +2,7 @@
  * Handle Submit
  * @param {*} event
  */
-function handleSubmit(event) { // eslint-disable-line no-unused-vars
+function handleSubmit(event) {
   event.preventDefault();
 
   // check what text was put into the form field
@@ -16,3 +16,5 @@ function handleSubmit(event) { // eslint-disable-line no-unused-vars
         document.getElementById('results').innerHTML = res.message;
       });
 }
+
+export {handleSubmit};
