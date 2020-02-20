@@ -1,5 +1,7 @@
 const path = require('path'); // eslint-disable-line no-unused-vars
 const webpack = require('webpack'); // eslint-disable-line no-unused-vars
+const HtmlWebPackPlugin = // eslint-disable-line no-unused-vars
+  require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/client/index.js',
@@ -16,4 +18,10 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new HtmlWebPackPlugin({
+      template: './src/client/views/index.html',
+      filename: './index.html',
+    }),
+  ],
 };
