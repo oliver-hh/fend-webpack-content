@@ -4,6 +4,7 @@ const HtmlWebPackPlugin = // eslint-disable-line no-unused-vars
   require('html-webpack-plugin');
 
 module.exports = {
+  mode: 'production',
   entry: './src/client/index.js',
   module: {
     rules: [
