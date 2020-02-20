@@ -1,9 +1,11 @@
 const path = require('path'); // eslint-disable-line no-unused-vars
 const webpack = require('webpack'); // eslint-disable-line no-unused-vars
-const HtmlWebPackPlugin = // eslint-disable-line no-unused-vars
+const HtmlWebPackPlugin =
   require('html-webpack-plugin');
 
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+const BundleAnalyzerPlugin =
+  require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
   mode: 'development',
@@ -32,5 +34,6 @@ module.exports = {
       cleanStaleWebpackAssets: true,
       protectWebpackAssets: true,
     }),
+    new BundleAnalyzerPlugin(),
   ],
 };
